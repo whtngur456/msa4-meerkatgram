@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class PostService {
+public class    PostService {
     private final PostMapper postMapper;
 
     public PostIndexRes index(PostIndexReq postIndexReq) {
