@@ -15,7 +15,7 @@ import java.util.List;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
     @ExceptionHandler(NotRegisteredException.class)
-    public ResponseEntity<GlobalRes<String>> NotregeistereHandle(NotRegisteredException e) {
+    public ResponseEntity<GlobalRes<String>> NotRegeistereHandle(NotRegisteredException e) {
         return ResponseEntity.status(400).body(
                 GlobalRes.<String>builder()
                         .code("E01")
